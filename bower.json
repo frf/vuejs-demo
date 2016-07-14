@@ -1,0 +1,24 @@
+{
+  "name": "Fabio Rocha",
+  "authors": [
+    "Fabio Rocha <fabio@fabiofarias.com.br>"
+  ],
+  "description": "Demo VueJs",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://www.fabiofarias.com.br",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3",
+    "vue-resource": "^0.9.3",
+    "jquery": "^3.1.0",
+    "vue": "^1.0.26"
+  }
+}
