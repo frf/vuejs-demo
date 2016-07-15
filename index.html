@@ -26,22 +26,64 @@
                     <!-- CEP -->
                     <div class="form-group">
                         <label for="inputCep">CEP</label>
-                        <input type="email" class="form-control" id="inputCep" v-on:keyup="buscar">
+                        <input type="text" class="form-control" id="inputCep" v-model="cep" v-el="cep" v-on:keyup="buscar">
 
                     </div>
-                    <div class="form-group"></div>
-                    <div class="form-group"></div>
-                    <div class="form-group"></div>
-                    <div class="form-group"></div>
                 </div>
                 <div class="col-md-9"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <!-- Logradouro -->
+                    <div class="form-group">
+                        <label for="inputLogradouro">Logradouro</label>
+                        <input type="text" class="form-control" id="inputLogradouro" v-model="endereco.logradouro" v-el="logradouro">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <!-- Numero -->
+                    <div class="form-group">
+                        <label for="inputLogradouro">Número</label>
+                        <input type="text" class="form-control" id="inputNumero" v-el="numero">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <!-- Complemento -->
+                    <div class="form-group">
+                        <label for="inputComplemento">Complemento</label>
+                        <input type="text" class="form-control" id="inputComplemento" >
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <!-- Bairro -->
+                    <div class="form-group">
+                        <label for="inputBairro">Bairro</label>
+                        <input type="text" class="form-control" id="inputBairro" v-model="endereco.bairro" >
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <!-- Numero -->
+                    <div class="form-group">
+                        <label for="inputCidade">Cidade</label>
+                        <input type="text" class="form-control" id="inputCidade" v-model="endereco.localidade" >
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <!-- Complemento -->
+                    <div class="form-group">
+                        <label for="inputEstado">Estado</label>
+                        <input type="text" class="form-control" id="inputEstado" v-model="endereco.uf"  >
+                    </div>
+                </div>
             </div>
 
         </form>
     </div>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/jquery-mask-plugin/dist/jquery.mask.js"></script>
     <script src="bower_components/vue/dist/vue.min.js"></script>
     <script src="bower_components/vue-resource/dist/vue-resource.js"></script>
     <script src="app.js"></script>
